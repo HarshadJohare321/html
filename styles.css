@@ -1,0 +1,111 @@
+:root {
+  color-scheme: light;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f7f8fb;
+  color: #1f2937;
+}
+
+.container {
+  width: min(1000px, 94vw);
+  margin: 0 auto;
+}
+
+header {
+  padding: 1.5rem 0 0.5rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.subtitle {
+  margin-top: 0.4rem;
+  color: #4b5563;
+}
+
+.panel {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 0.8rem 0;
+}
+
+.quick-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.6rem;
+}
+
+.quick-links a,
+.doc-link {
+  display: block;
+  text-decoration: none;
+  color: #0f4eb3;
+  background: #eef4ff;
+  border: 1px solid #d6e3ff;
+  border-radius: 8px;
+  padding: 0.55rem 0.7rem;
+}
+
+.quick-links a:hover,
+.doc-link:hover {
+  background: #e5efff;
+}
+
+.search-label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 0.6rem 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #cdd5df;
+  margin-bottom: 0.9rem;
+}
+
+.module-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 0.7rem;
+}
+
+.module details {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.6rem;
+  background: #fafbff;
+}
+
+.module summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.module-links {
+  margin-top: 0.6rem;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.empty-state {
+  color: #6b7280;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.45rem;
+  }
+}
