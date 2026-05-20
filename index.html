@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marketplace Documentation Portal</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="container">
+      <h1>Marketplace Documentation Portal</h1>
+      <p class="subtitle">Browse requirements, use cases, user stories, business rules, and traceability in one place.</p>
+    </header>
+
+    <main class="container">
+      <section class="panel">
+        <h2>Quick Links</h2>
+        <div class="quick-links">
+          <a href="ACCEPTANCE_CRITERIA_INDEX_v1.md" target="_blank" rel="noopener">Requirements</a>
+          <a href="USE_CASE_CATALOG_v1.md" target="_blank" rel="noopener">Use Cases</a>
+          <a href="ENTERPRISE_USER_STORIES_INDEX_v1.md" target="_blank" rel="noopener">User Stories</a>
+          <a href="BUSINESS_RULES_CATALOG_v1.md" target="_blank" rel="noopener">Business Rules</a>
+          <a href="TRACEABILITY_MATRIX_v1.md" target="_blank" rel="noopener">Traceability Matrix</a>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>How to use</h2>
+        <ol>
+          <li>Use the search box to filter modules or document names.</li>
+          <li>Click a module card to expand links for module use cases and user stories.</li>
+          <li>Open any link to view the markdown document directly.</li>
+        </ol>
+      </section>
+
+      <section class="panel">
+        <h2>Module Documentation</h2>
+        <label for="searchInput" class="search-label">Search modules/docs</label>
+        <input id="searchInput" type="search" placeholder="e.g., payment, inventory, user stories" />
+        <div id="moduleGrid" class="module-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
