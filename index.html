@@ -4,44 +4,78 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Marketplace Documentation Portal</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header class="container">
-      <h1>Marketplace Documentation Portal</h1>
-      <p class="subtitle">Browse requirements, use cases, user stories, business rules, and traceability in one place.</p>
+      <h1>🛒 Marketplace Documentation Portal</h1>
+      <p class="subtitle">Hyperlocal Grocery Marketplace - Kharadi, Pune</p>
     </header>
 
     <main class="container">
       <section class="panel">
-        <h2>Quick Links</h2>
+        <h2>📋 Core Documentation</h2>
         <div class="quick-links">
-          <a href="https://raw.githubusercontent.com/HarshadJohare321/html/copilot/create-static-html-docs-portal/ACCEPTANCE_CRITERIA_INDEX_v1.md" target="_blank" rel="noopener">Requirements</a>
-          <a href="https://raw.githubusercontent.com/HarshadJohare321/html/copilot/create-static-html-docs-portal/USE_CASE_CATALOG_v1.md" target="_blank" rel="noopener">Use Cases</a>
-          <a href="https://raw.githubusercontent.com/HarshadJohare321/html/copilot/create-static-html-docs-portal/ENTERPRISE_USER_STORIES_INDEX_v1.md" target="_blank" rel="noopener">User Stories</a>
-          <a href="https://raw.githubusercontent.com/HarshadJohare321/html/copilot/create-static-html-docs-portal/BUSINESS_RULES_CATALOG_v1.md" target="_blank" rel="noopener">Business Rules</a>
-          <a href="https://raw.githubusercontent.com/HarshadJohare321/html/copilot/create-static-html-docs-portal/TRACEABILITY_MATRIX_v1.md" target="_blank" rel="noopener">Traceability Matrix</a>
+          <a href="docs/core/ACCEPTANCE_CRITERIA_INDEX_v1.md" target="_blank">✅ Requirements</a>
+          <a href="docs/core/USE_CASE_CATALOG_v1.md" target="_blank">📖 Use Cases</a>
+          <a href="docs/core/ENTERPRISE_USER_STORIES_INDEX_v1.md" target="_blank">👥 User Stories</a>
+          <a href="docs/core/BUSINESS_RULES_CATALOG_v1.md" target="_blank">📏 Business Rules</a>
+          <a href="docs/core/TRACEABILITY_MATRIX_v1.md" target="_blank">🔗 Traceability Matrix</a>
         </div>
       </section>
 
       <section class="panel">
-        <h2>How to use</h2>
+        <h2>ℹ️ How to Use</h2>
         <ol>
-          <li>Use the search box to filter modules or document names.</li>
-          <li>Click a module card to expand links for module use cases and user stories.</li>
-          <li>Open any link to view the markdown document directly on GitHub.</li>
-          <li>All links work both online and offline once downloaded.</li>
+          <li>Use the search box below to filter modules or document names.</li>
+          <li>Click a module card to expand and see available documents.</li>
+          <li>Click any link to view the markdown document directly.</li>
+          <li>All files are organized in folders for easy navigation.</li>
         </ol>
       </section>
 
       <section class="panel">
-        <h2>Module Documentation</h2>
-        <label for="searchInput" class="search-label">Search modules/docs</label>
+        <h2>🏢 Module Documentation</h2>
+        <label for="searchInput" class="search-label">🔍 Search modules/docs</label>
         <input id="searchInput" type="search" placeholder="e.g., payment, inventory, user stories" />
         <div id="moduleGrid" class="module-grid" aria-live="polite"></div>
       </section>
+
+      <section class="panel">
+        <h2>📁 Folder Structure</h2>
+        <pre class="folder-tree">project/
+├── index.html
+├── css/
+│   └── styles.css
+├── js/
+│   └── app.js
+├── docs/
+│   ├── core/
+│   │   ├── ACCEPTANCE_CRITERIA_INDEX_v1.md
+│   │   ├── USE_CASE_CATALOG_v1.md
+│   │   ├── ENTERPRISE_USER_STORIES_INDEX_v1.md
+│   │   ├── BUSINESS_RULES_CATALOG_v1.md
+│   │   └── TRACEABILITY_MATRIX_v1.md
+│   └── modules/
+│       ├── identity-access/
+│       │   ├── USE_CASES_Identity_and_Access_v1.md
+│       │   └── USER_STORIES_Identity_and_Access_v1.md
+│       ├── vendor-management/
+│       ├── catalog/
+│       ├── inventory/
+│       ├── cart/
+│       ├── ordering/
+│       ├── payment/
+│       ├── delivery/
+│       ├── pickup/
+│       ├── dispute/
+│       ├── finance/
+│       ├── notification/
+│       └── audit/
+└── README.md</pre>
+      </section>
     </main>
 
-    <script src="app.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
