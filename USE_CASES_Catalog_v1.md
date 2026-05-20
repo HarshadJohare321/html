@@ -1,13 +1,17 @@
-# Use Cases - Catalog
+# Catalog - Use Cases v1
 
-This document captures module-level use case definitions for Catalog.
+## UC-CAT-001: Product Upload
+**Actors:** Vendor, Catalog Service
+**Flow:** Vendor adds product → Enters details → Selects category → Uploads image → System validates → Product published
 
-## Scope
-- Primary actors
-- Primary flows
-- Alternate flows
-- Preconditions and postconditions
+## UC-CAT-002: Product Search
+**Actors:** Customer, Search Engine
+**Flow:** Customer enters search term → System searches → Results displayed → Customer clicks product
 
-## Related Artifacts
-- BUSINESS_RULES_CATALOG_v1.md
-- TRACEABILITY_MATRIX_v1.md
+## UC-CAT-003: Browse Categories
+**Actors:** Customer, Category Service
+**Flow:** Customer views homepage → Clicks category → Subcategories shown → Products listed
+
+## UC-CAT-004: Product Details View
+**Actors:** Customer, Product Service
+**Flow:** Customer views product → Details shown → Reviews displayed → Add to cart option available

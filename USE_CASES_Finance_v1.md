@@ -1,13 +1,13 @@
-# Use Cases - Finance
+# Finance - Use Cases v1
 
-This document captures module-level use case definitions for Finance.
+## UC-FIN-001: Vendor Settlement
+**Actors:** Finance Service, Bank
+**Flow:** Weekly settlement period → Orders calculated → Commission deducted → Amount transferred → Report generated
 
-## Scope
-- Primary actors
-- Primary flows
-- Alternate flows
-- Preconditions and postconditions
+## UC-FIN-002: Payment Reconciliation
+**Actors:** Finance Service, Payment Gateway
+**Flow:** Transactions fetched → Compared with orders → Discrepancies identified → Manual review if needed
 
-## Related Artifacts
-- BUSINESS_RULES_CATALOG_v1.md
-- TRACEABILITY_MATRIX_v1.md
+## UC-FIN-003: Financial Reporting
+**Actors:** Admin, Finance Service
+**Flow:** Admin requests report → System generates → Data exported → Email sent

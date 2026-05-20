@@ -1,13 +1,17 @@
-# Use Cases - Vendor Management
+# Vendor Management - Use Cases v1
 
-This document captures module-level use case definitions for Vendor Management.
+## UC-VM-001: Vendor Registration
+**Actors:** Vendor, KYC Service, Admin
+**Flow:** Vendor fills form → Documents uploaded → System validates → Admin reviews → Approval email sent
 
-## Scope
-- Primary actors
-- Primary flows
-- Alternate flows
-- Preconditions and postconditions
+## UC-VM-002: Store Setup
+**Actors:** Vendor, Store Service
+**Flow:** Vendor enters store name → Location selection → Hours → Contact details → Store created
 
-## Related Artifacts
-- BUSINESS_RULES_CATALOG_v1.md
-- TRACEABILITY_MATRIX_v1.md
+## UC-VM-003: Service Area Management
+**Actors:** Vendor, Geo Service
+**Flow:** Vendor defines delivery zones → System validates coverage → Areas activated
+
+## UC-VM-004: Vendor Profile Update
+**Actors:** Vendor
+**Flow:** Vendor edits business details → Changes saved → Effective immediately

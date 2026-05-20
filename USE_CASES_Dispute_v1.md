@@ -1,13 +1,13 @@
-# Use Cases - Dispute
+# Dispute - Use Cases v1
 
-This document captures module-level use case definitions for Dispute.
+## UC-DISP-001: File Dispute
+**Actors:** Customer, Dispute Service
+**Flow:** Customer reports issue → Provides evidence → Dispute created → Admin notified → Investigation starts
 
-## Scope
-- Primary actors
-- Primary flows
-- Alternate flows
-- Preconditions and postconditions
+## UC-DISP-002: Dispute Investigation
+**Actors:** Admin, Vendor, Dispute Service
+**Flow:** Admin reviews evidence → Contacts vendor → Gathers response → Makes decision
 
-## Related Artifacts
-- BUSINESS_RULES_CATALOG_v1.md
-- TRACEABILITY_MATRIX_v1.md
+## UC-DISP-003: Dispute Resolution
+**Actors:** System, Dispute Service
+**Flow:** Decision made → Customer notified → Refund/Credit processed → Dispute closed

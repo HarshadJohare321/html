@@ -1,13 +1,17 @@
-# Use Cases - Inventory
+# Inventory - Use Cases v1
 
-This document captures module-level use case definitions for Inventory.
+## UC-INV-001: Stock Management
+**Actors:** Vendor, Inventory Service
+**Flow:** Vendor updates stock → System validates → Availability adjusted → Product visible/hidden accordingly
 
-## Scope
-- Primary actors
-- Primary flows
-- Alternate flows
-- Preconditions and postconditions
+## UC-INV-002: Reservation
+**Actors:** Customer, Inventory Service
+**Flow:** Customer adds item to cart → System reserves stock → Stock held for 15 mins → Released if unpaid
 
-## Related Artifacts
-- BUSINESS_RULES_CATALOG_v1.md
-- TRACEABILITY_MATRIX_v1.md
+## UC-INV-003: Inventory Adjustment
+**Actors:** Vendor, Adjustment Service
+**Flow:** Vendor reports damage/loss → Stock adjusted → Reason logged → Confirmation sent
+
+## UC-INV-004: Low Stock Alert
+**Actors:** Vendor, Notification Service
+**Flow:** Stock falls below threshold → Alert sent → Vendor can order more stock
