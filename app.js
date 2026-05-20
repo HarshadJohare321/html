@@ -1,3 +1,5 @@
+const GITHUB_RAW_URL = 'https://raw.githubusercontent.com/HarshadJohare321/html/copilot/create-static-html-docs-portal';
+
 const modules = [
   'Identity_and_Access',
   'Vendor_Management',
@@ -15,8 +17,8 @@ const modules = [
 ].map((key) => ({
   key,
   name: key.replaceAll('_', ' '),
-  useCase: `USE_CASES_${key}_v1.md`,
-  userStory: `USER_STORIES_${key}_v1.md`
+  useCase: `${GITHUB_RAW_URL}/USE_CASES_${key}_v1.md`,
+  userStory: `${GITHUB_RAW_URL}/USER_STORIES_${key}_v1.md`
 }));
 
 const grid = document.getElementById('moduleGrid');
